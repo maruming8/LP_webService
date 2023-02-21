@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <header class="w-full h-[52px] md:h-[72px] bg-white bg-opacity-70 fixed top-0 left-0 z-30">
+    <div class="inner flex items-center">
+      <figure class="w-[71px] md:w-[83px]">
+        <img src="/assets/img/logo.svg" alt="Ravek" width="83" height="28">
+      </figure>
+      <nav id="nav" class="menu menu-pc">
+        <ul>
+          <li><a href="#feature">特長</a></li>
+          <li><a href="#users">導入実績</a></li>
+          <li><a href="#flow">導入までの流れ</a></li>
+          <li><a href="#price">料金プラン</a></li>
+          <li><a href="#question">よくある質問</a></li>
+        </ul>
+        <div>
+          <a href="#" class="btn-dark btn-base lg:btn-sm">まずは無料で使ってみる</a>
+          <a href="#" class="btn-light btn-base lg:btn-sm mt-8 md:ml-[36px] md:mt-0">資料をダウンロードする</a>
+        </div>        
+      </nav>
+      <a href="#" class="btn-dark w-[180px] text-xs leading-9 ml-3.5 hidden md:block">無料で使ってみる</a>
+      <button id="mobileIcon" class="fixed top-2.5 right-5 md:hidden">
+        <p><img src="./assets/img/text_menu.svg" class="mx-auto" alt="menu" width="19" height="6"></p>
+        <div class="mt-1.5">
+          <span class="block w-[21px] h-[3px] bg-navy rounted-full"></span>
+          <span class="block w-[13px] h-[3px] bg-navy rounted-full ml-auto my-1.5"></span>
+          <span class="block w-[21px] h-[3px] bg-navy rounted-full"></span>
+        </div>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!--fv-->
+    <section class="w-full bg-lavender py-[60px] mt-[52px] md:py-8 md:mt-[72px]">
+      <div class="inner grid lg:grid-cols-[656px_auto] lg:gap-y-8 lg:gap-x-4">
+        <div class="lg:row-start-1 lg:row-end-2 lg:self-end">
+          <h2 class="text-3xl md:text-[60px] font-bold leading-relaxed">
+            タスク管理は<br>時間をかけず、高速に。
+          </h2>
+          <p class="md:text-lg mt-4 md:mt-6 leading-relaxed">
+            Ravek（レイベック）は複数人のプロジェクトにおけるタスク管理を簡単かつ高速にし、生産性を向上させるツールです。
+          </p>
+        </div>
+        <figure class="lg:row-start-1 lg:row-end-3 justify-self-center lg:self-start">
+          <img src="./assets/img/img_fv.png" alt="" width="515" height="515">
+        </figure>
+        <div class="flex flex-col justify-self-center md:flex-row lg:row-start-2 lg:row-end-3 lg:self-start">
+          <a href="#" class="btn-dark btn-base lg:btn-sm">まずは無料で使ってみる</a>
+          <a href="#" class="btn-light btn-base lg:btn-sm mt-8 md:ml-[36px] md:mt-0">資料をダウンロードする</a>
+        </div>
+      </div>
+    </section>
+
+    <!--about-->
+    <section class="w-full bg-white pt-20 pb-[60px] md:py-[100px]">
+      <div class="inner">
+        <span class="section-title-en">What is Ravek?</span>
+        <h2 class="section-title">タスク管理の時間を<br class="lg:hidden">削減するツール</h2>
+        <div class="mt-6 text-center">
+          <p>
+            Ravek（レイベック）は、
+            <span class="font-bold inline-block">複数人が関わるプロジェクトでのタスク管理を簡単かつ高速にするツール</span>です。
+          </p>
+          <p class="mt-4">
+            タスクの登録や進捗管理の手間を減らし、わかりやすく見える化することで<br class="hidden md:block">
+            タスク管理にかかる時間を極限まで減らし、本質的な業務に時間を使いましょう。
+          </p>
+        </div>
+        <a href="#" class="btn-dark btn-base md:btn-lg mx-auto mt-6 md:mt-10">無料でRavekを使ってみる</a>
+      </div>
+    </section>
+    
+    <!--feature-->
+    <section id="feature" class="w-full bg-lightGray pt-20 pb-[60px] md:py-[100px]">
+      <div class="inner">
+        <span class="section-title-en">Feature</span>
+        <h2 class="section-title">Ravekの3つの特長</h2>
+        <ul class="mt-10 md:mt-[100px]">
+          <li class="flex flex-col lg:flex-row-reverse items-center lg:justify-end">
+            <figure class="px-12 relative lg:px-0 lg:-ml-[10%]">
+              <img src="./assets/img/feature01.png" alt="" width="520" height="520">
+            </figure>
+            <div class="w-screen max-w-[742px] bg-white rounded-3xl lg:rounded-[30px] pt-12 px-5 pb-10 -mt-[18%] lg:mt-auto lg:px-10 lg:px-16 lg:grid lg:grid-cols-[90px_470px]">
+              <span class="block lg:row-start-1 lg:row-end-3 w-[53px] lg:w-[90px]">
+                <img src="./assets/img/number01.svg" alt="01" width="90" height="72">  
+              </span>
+              <p class="text-[22px] md:text-4xl font-bold leading-[1.4]">
+                タスクの種類・進捗を<br>
+                ダッシュボードで確認可能
+              </p>
+              <p class="text-sm md:text-base mt-2">
+                Ravekはメンバーが入力したタスクを整理し、ダッシュボードにガントチャートとして表示。ダッシュボードを確認するだけで、誰のどのタスクがどの程度進んでいるのかを一目で把握できます。
+              </p>
+            </div>
+          </li>
+
+          <li class="flex flex-col lg:flex-row items-center mt-[60px] lg:justify-end lg:mt-[152px] lg:min-h-[520px]">
+            <figure class="px-12 relative lg:px-0 lg:-mr-[10%]">
+              <img src="./assets/img/feature02.png" alt="" width="520" height="520">
+            </figure>
+            <div class="w-screen max-w-[742px] bg-white rounded-3xl lg:rounded-[30px] pt-12 px-5 pb-10 -mt-[18%] lg:mt-0 lg:mb-auto lg:px-10 lg:px-16 lg:grid lg:grid-cols-[90px_470px]">
+              <span class="block lg:row-start-1 lg:row-end-3 w-[53px] lg:w-[90px]">
+                <img src="./assets/img/number02.svg" alt="02" width="90" height="72">
+              </span>
+              <p class="text-[22px] md:text-4xl font-bold leading-[1.4] lg:w-[575px]">
+                タスクの入力がシンプルかつ簡単。<br>
+                入力の手間が最小限に
+              </p>
+              <p class="text-sm md:text-base mt-2">
+                タスク管理ツールで面倒になりがちなタスクの入力作業。
+                RavekはPC・スマートフォンのどちらでもシンプルかつ簡単に入力でき、手間が最小限に抑えられます。本質的な業務に時間を割きましょう。              </p>
+            </div>
+          </li>
+
+          <li class="flex flex-col lg:flex-row-reverse items-center mt-[60px] lg:justify-end lg:-mt-[100px]">
+            <figure class="px-12 relative lg:px-0 lg:-ml-[10%]">
+              <img src="./assets/img/feature03.png" alt="" width="520" height="520">
+            </figure>
+            <div class="w-screen max-w-[742px] bg-white rounded-3xl lg:rounded-[30px] pt-12 px-5 pb-10 -mt-[18%] lg:mt-auto lg:px-10 lg:px-16 lg:grid lg:grid-cols-[90px_470px]">
+              <span class="block lg:row-start-1 lg:row-end-3 w-[53px] lg:w-[90px]">
+                <img src="./assets/img/number03.svg" alt="03" width="90" height="72">
+              </span>
+              <p class="text-[22px] md:text-4xl font-bold leading-[1.4]">
+                SlackとのAPI連携<br>
+                ツール切り替えの手間を削減
+              </p>
+              <p class="text-sm md:text-base mt-2">
+                RavekはSlackと連携することで、Slack上でRavekをタスクを追加したり、確認したりできます。都度の切り替えの手間がなくなり、シームレスに扱えるのが特長です。Slackを導入しているなら違和感なく使用できます。              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--cta-->
+    <section class="w-full bg-black py-10 md:py-[60px]">
+      <div class="inner">
+        <h2 class="text-lg font-bold text-white text-center md:text-4xl">
+          14日間の無料トライアル可能。<br>
+          Ravekで快適なタスク管理を体験しよう
+        </h2>
+        <a href="#" class="btn-dark btn-base md:btn-lg mx-auto mt-6 md:mt-9">無料でRavekを使ってみる</a>
+      </div>
+    </section>
+
+    <!--users-->
+    <section id="users" class="w-full bg-white pt-20 pb-[60px] md:py-[100px]">
+      <div class="inner">
+        <span class="section-title-en">Users</span>
+        <h2 class="section-title">導入実績</h2>
+        <div class="w-[972px] max-w-full grid grid-cols-4 gap-3 md:gap-y-[50px] md:gap-x-10 justify-items-center mx-auto mt-6 md:mt-10">
+          <figure>
+            <img src="./assets/img/users_company.png" alt="会社名" width="213" height="169">
+          </figure>
+          <figure>
+            <img src="./assets/img/users_company.png" alt="会社名" width="213" height="169">
+          </figure>
+          <figure>
+            <img src="./assets/img/users_company.png" alt="会社名" width="213" height="169">
+          </figure>
+          <figure>
+            <img src="./assets/img/users_company.png" alt="会社名" width="213" height="169">
+          </figure>
+          <figure>
+            <img src="./assets/img/users_company.png" alt="会社名" width="213" height="169">
+          </figure>
+          <figure>
+            <img src="./assets/img/users_company.png" alt="会社名" width="213" height="169">
+          </figure>
+          <figure>
+            <img src="./assets/img/users_company.png" alt="会社名" width="213" height="169">
+          </figure>
+          <figure>
+            <img src="./assets/img/users_company.png" alt="会社名" width="213" height="169">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!--flow-->
+    <section id="flow" class="w-full bg-lightGray pt-20 pb-[60px] md:py-[100px]">
+      <div class="inner">
+        <span class="section-title-en">Flow</span>
+        <h2 class="section-title">導入までの流れ</h2>
+
+        <ul class="grid md:grid-cols-3 gap-y-[84px] mt-14 md:gap-x-[10%] md:mt-16">
+          <li>
+            <div class="bg-lavender rounded-[30px] py-5 max-w-[335px] mx-auto relative">
+              <span class="block absolute top-0 left-0 w-[60px]">
+                <img src="./assets/img/number01.svg" alt="01" width="90" height="72">
+              </span>
+              <img src="./assets/img/flow01.png" class="mx-auto" alt="" width="199" height="149">
+            </div>
+            <div class="w-full text-center mt-4">
+              <p class="text-xl md:text-2xl font-bold">
+                無料トライアルを開始
+              </p>
+              <p class="text-base mt-2">
+                まずはRavekの使用感をお試しください。最初の14日間は無料でご使用いただけます。
+              </p>
+            </div>
+          </li>
+
+          <li class="relative md:before:bg-[url('./assets/img/flow_arrow.png')] md:before:bg-no-repeat md:before:bg-center md:before:bg-contain md:before:w-[29px] md:before:h-16 md:before:absolute md:before:top-[70px] md:before:-left-[22%]">
+            <div class="bg-lavender rounded-[30px] py-5 max-w-[335px] mx-auto relative">
+              <span class="block absolute top-0 left-0 w-[60px]">
+                <img src="./assets/img/number02.svg" alt="02" width="90" height="72">
+              </span>
+              <img src="./assets/img/flow02.png" class="mx-auto" alt="" width="199" height="149">
+            </div>
+            <div class="w-full text-center mt-4">
+              <p class="text-xl md:text-2xl font-bold">
+                本格導入をサポート
+              </p>
+              <p class="text-base mt-2">
+                Ravekを気に入っていただけましたら、適したプランで導入ください。導入にお困りの際は、メール、またはチャットにてサポートいたします。
+              </p>
+            </div>
+          </li>
+
+          <li class="relative md:before:bg-[url('./assets/img/flow_arrow.png')] md:before:bg-no-repeat md:before:bg-center md:before:bg-contain md:before:w-[29px] md:before:h-16 md:before:absolute md:before:top-[70px] md:before:-left-[22%]">
+            <div class="bg-lavender rounded-[30px] py-5 max-w-[335px] mx-auto relative">
+              <span class="block absolute top-0 left-0 w-[60px]">
+                <img src="./assets/img/number03.svg" alt="03" width="90" height="72">
+              </span>
+              <img src="./assets/img/flow03.png" class="mx-auto" alt="" width="199" height="149">
+            </div>
+            <div class="w-full text-center mt-4">
+              <p class="text-xl md:text-2xl font-bold">
+                全プロジェクトへ展開
+              </p>
+              <p class="text-base mt-2">
+                Ravekは段階的な導入がおすすめです。主要プロジェクトでの運用に慣れたら、全プロジェクトへ展開を行いましょう。
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>      
+    </section>
+    
+    <!--cta-->
+    <section class="w-full bg-black py-10 md:py-[60px]">
+      <div class="inner">
+        <h2 class="text-lg font-bold text-white text-center md:text-4xl">
+          14日間の無料トライアル可能。<br>
+          Ravekで快適なタスク管理を体験しよう
+        </h2>
+        <a href="#" class="btn-dark btn-base md:btn-lg mx-auto mt-6 md:mt-9">無料でRavekを使ってみる</a>
+      </div>
+    </section>
+
+    <!--price-->
+    <section id="price" class="w-full bg-white pt-20 pb-[60px] md:py-[100px]">
+      <div class="inner">
+        <span class="section-title-en">Price</span>
+        <h2 class="section-title">料金プラン</h2>
+        <div class="w-screen md:w-full mt-20 overflow-x-scroll -ml-5 pl-5 md:ml-0 md:px-0 md:overflow-x-visible">
+          <table class="w-[700px] lg:w-[1020px] md:max-w-full mx-auto">
+            <thead>
+              <tr class="text-white">
+                <th></th>
+                <th class="pt-5">
+                  <div class="th-top">
+                    <p>ライト</p>
+                    <p class="text-xs lg:text-lg mt-2.5 lg:mt-4">月額<span class="text-2xl lg:text-[40px]">1,980</span>円</p>
+                    <a href="#" class="btn-table-mono">無料で使ってみる</a>
+                  </div>
+                </th>
+                <th class="bg-navy align-bottom shadow-[0_4px_20px_0_rgba(0,0,0,0.6)]">
+                  <div class="th-top bg-navy">
+                    <p>ベーシック</p>
+                    <p class="text-xs lg:text-lg mt-2.5 lg:mt-4">月額<span class="text-2xl lg:text-[40px]">2,980</span>円</p>
+                    <a href="#" class="btn-table-dark">無料で使ってみる</a>
+                  </div>
+              </th>
+                <th class="pt-5">
+                  <div class="th-top">
+                    <p>プレミアム</p>
+                    <p class="text-xs lg:text-lg mt-2.5 lg:mt-4">月額<span class="text-2xl lg:text-[40px]">4,980</span>円</p>
+                    <a href="#" class="btn-table-mono ">無料で使ってみる</a>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+  
+            <tbody>
+              <tr class="bg-lavender">
+                <th class="th-side">プロジェクト数</th>
+                <td>５</td>
+                <td class="font-bold">15</td>
+                <td>15</td>
+              </tr>
+              <tr class="bg-white">
+                <th class="th-side">メンバー数</th>
+                <td>10</td>
+                <td class="font-bold">30</td>
+                <td>30</td>
+              </tr>
+              <tr class="bg-lavender">
+                <th class="th-side">ストレージ(容量)</th>
+                <td>25GB</td>
+                <td class="font-bold">50GB</td>
+                <td>100GB</td>
+              </tr>
+              <tr class="bg-white">
+                <th class="th-side">2段階認証</th>
+                <td></td>
+                <td class="font-bold">〇</td>
+                <td>〇</td>
+              </tr>
+              <tr class="bg-lavender">
+                <th class="th-side">IP制限</th>
+                <td></td>
+                <td></td>
+                <td>〇</td>
+              </tr>
+              <tr class="bg-white">
+                <th class="th-side">メールサポート</th>
+                <td>〇</td>
+                <td class="font-bold">〇</td>
+                <td>〇</td>
+              </tr>
+              <tr class="bg-lavender">
+                <th class="th-side">チャットサポート</th>
+                <td>〇</td>
+                <td class="font-bold">〇</td>
+                <td>〇</td>
+              </tr>
+              <tr class="bg-white">
+                <td></td>
+                <td class="pb-2 md:pb-3.5"><a href="#" class="btn-table-mono">無料で使ってみる</a></td>
+                <td class="pb-2 md:pb-3.5"><a href="#" class="btn-table-dark">無料で使ってみる</a></td>
+                <td class="pb-2 md:pb-3.5"><a href="#" class="btn-table-mono">無料で使ってみる</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!--question-->
+    <section id="question" class="w-full bg-lightGray pt-20 pb-[60px] md:py-[100px]">
+      <div class="inner">
+        <span class="section-title-en">Question</span>
+        <h2 class="section-title">よくある質問</h2>
+        <dl class="w-[920px] max-w-full mx-auto mt-10 md:mt-[60px]">
+          <div>
+            <dt>
+              <span class="text-[22px] font-bold absolute top-4 left-4 md:left-6">Q</span>Ravekはユーザー1人あたりの課金制なのですか？
+            </dt>
+            <dd>
+              <span class="text-[22px] font-bold absolute top-4 left-4 md:left-6">A</span>いえ、Ravekは１アカウント開設いただくと、そのプランに応じたユーザー数の分だけ、使用できます。<br>
+              もしプランのデフォルトユーザー数を超えて利用されたい場合は、お問い合わせください。
+            </dd>
+          </div>
+          <div class="mt-6">
+            <dt>
+              <span class="text-[22px] font-bold absolute top-4 left-4 md:left-6">Q</span>Ravekはユーザー1人あたりの課金制なのですか？
+            </dt>
+            <dd>
+              <span class="text-[22px] font-bold absolute top-4 left-4 md:left-6">A</span>いえ、Ravekは１アカウント開設いただくと、そのプランに応じたユーザー数の分だけ、使用できます。<br>
+              もしプランのデフォルトユーザー数を超えて利用されたい場合は、お問い合わせください。
+            </dd>
+          </div>
+          <div class="mt-6">
+            <dt>
+              <span class="text-[22px] font-bold absolute top-4 left-4 md:left-6">Q</span>Ravekはユーザー1人あたりの課金制なのですか？
+            </dt>
+            <dd>
+              <span class="text-[22px] font-bold absolute top-4 left-4 md:left-6">A</span>いえ、Ravekは１アカウント開設いただくと、そのプランに応じたユーザー数の分だけ、使用できます。<br>
+              もしプランのデフォルトユーザー数を超えて利用されたい場合は、お問い合わせください。
+            </dd>
+          </div>
+          <div class="mt-6">
+            <dt>
+              <span class="text-[22px] font-bold absolute top-4 left-4 md:left-6">Q</span>Ravekはユーザー1人あたりの課金制なのですか？
+            </dt>
+            <dd>
+              <span class="text-[22px] font-bold absolute top-4 left-4 md:left-6">A</span>いえ、Ravekは１アカウント開設いただくと、そのプランに応じたユーザー数の分だけ、使用できます。<br>
+              もしプランのデフォルトユーザー数を超えて利用されたい場合は、お問い合わせください。
+            </dd>
+          </div>
+        </dl>
+
+      </div>
+    </section>
+    
+    <!--cta-->
+    <section class="w-full bg-black py-10 md:py-[60px]">
+      <div class="inner">
+        <h2 class="text-lg font-bold text-white text-center md:text-4xl">
+          14日間の無料トライアル可能。<br>
+          Ravekで快適なタスク管理を体験しよう
+        </h2>
+        <a href="#" class="btn-dark btn-base md:btn-lg mx-auto mt-6 md:mt-9">無料でRavekを使ってみる</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-pureBlack py-10 md:py-7">
+    <div class="inner flex flex-col items-center text-center md:flex-row-reverse md:text-left">
+      <div class="w-[124px] grid grid-cols-3 justify-items-center gap-y-3 md:ml-auto">
+        <p class="col-start-1 col-end-4 text-white text-lg font-bold">Share on SNS</p>
+        <a href="#" class="hover-opacity"><img src="./assets/img/icon_twitter.svg" alt="twitter" width="24" height="24"></a>
+        <a href="#" class="hover-opacity"><img src="./assets/img/icon_instagram.svg" alt="instagram" width="24" height="24"></a>
+        <a href="#" class="hover-opacity"><img src="./assets/img/icon_facebook.svg" alt="facebook" width="24" height="24"></a>
+      </div>
+      <div class="mt-8 md:mt-0">
+        <a href="#" class="w-[69px] brightness-0 invert hover-opacity">
+          <img src="./assets/img/logo.svg" class="mx-auto md:ml-0" alt="Ravek" width="69" height="24">
+        </a>
+        <ul class="flex flex-col text-white font-bold text-sm mt-3.5 md:flex-row md:mt-5">
+          <li><a href="#" class="hover-opacity">会社概要</a></li>
+          <li class="mt-3.5 md:mt-0 md:ml-3.5 hover-opacity"><a href="#">プライバシーポリシー</a></li>
+          <li class="mt-3.5 md:mt-0 md:ml-3.5 hover-opacity"><a href="#">利用規約</a></li>
+          <li class="mt-3.5 md:mt-0 md:ml-3.5 hover-opacity"><a href="#">お問い合わせ</a></li>
+        </ul>
+        <p class="mt-[28px] md:mt-5">
+          <small class="text-white text-[10px]">© Ravek Inc. 2021<br class="md:hidden">Illustration by FreepikStoryset</small>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const mq = window.matchMedia("(min-width: 768px)");
+      const nav = document.getElementById('nav');
+      const header = document.querySelector('header');
+
+      function mqCheck(mq) {
+        if (mq.matches) {
+          nav.classList.remove('menu-open');
+          document.body.classList.remove('overflow-y-hidden');
+          nav.classList.remove('transition-all');
+          icon.classList.remove('close-icon');
+          header.classList.add('bg-opacity-70');
+        } else {
+        }
+      }
+      mqCheck(mq);
+      mq.addEventListener('change', mqCheck, false);
+
+      const icon = document.getElementById('mobileIcon');
+      icon.addEventListener('click', () => {
+        icon.classList.toggle('close-icon');
+        nav.classList.add('transition-all');
+        nav.classList.toggle('menu-open');
+        header.classList.toggle('bg-opacity-70');
+        document.body.classList.toggle('overflow-y-hidden');
+      });
+    }, false);
+  </script>
+
+
+</body>
+</html>
